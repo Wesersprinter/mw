@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' blob: data:; font-src 'self'; connect-src 'self' https://*.supabase.co wss://*.supabase.co; worker-src 'self' blob:; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'">
+<title>Maschenwerk</title>
+<meta name="description" content="Strick-App fürs Handy: Anleitung und Reihenzähler auf einem Bildschirm, Erinnerungen für Zu- und Abnahmen, Teile, Garn- und Nadelvorrat, Rechner.">
+<meta name="theme-color" content="#EEEEE8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#14131A" media="(prefers-color-scheme: dark)">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Maschenwerk">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="referrer" content="no-referrer">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="icons/favicon-48.png" sizes="48x48" type="image/png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="preload" href="fonts/atkinson-hyperlegible-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/barlow-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="app.css?v=c33d96b3">
+<script src="config.js?v=c33d96b3" defer></script>
+<script src="vendor/supabase.js" defer></script>
+<script src="app.js?v=c33d96b3" defer></script>
+</head>
+<body>
+<main id="main"><div class="empty" style="padding-top:30vh">Maschenwerk wird geladen …</div></main>
+<nav id="tabs" aria-label="Bereiche"></nav>
+<section id="work" hidden aria-label="Stricken"></section>
+<div id="sheet" hidden><div class="scrim" data-sheet="close"></div><div class="panel" role="dialog" aria-modal="true"></div></div>
+<div id="toast" hidden role="status"></div>
+<input type="file" id="file" hidden>
+
+<noscript><p style="padding:24px;font-family:system-ui">Maschenwerk braucht JavaScript. Bitte im Browser aktivieren.</p></noscript>
+</body>
+</html>

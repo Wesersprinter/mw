@@ -1,0 +1,23 @@
+{
+  "name": "Maschenwerk",
+  "short_name": "Maschenwerk",
+  "description": "Strick-App: Anleitung und Reihenzähler auf einem Bildschirm, Erinnerungen für Zu- und Abnahmen, Teile, Garn- und Nadelvorrat, Rechner.",
+  "lang": "de",
+  "dir": "ltr",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#EEEEE8",
+  "theme_color": "#EEEEE8",
+  "categories": ["lifestyle", "productivity"],
+  "icons": [
+    {"src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+    {"src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"},
+    {"src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+  ],
+  "shortcuts": [
+    {"name": "Weiterstricken", "short_name": "Weiter", "description": "Zuletzt gestricktes Projekt im Strickmodus öffnen", "url": "./?weiter",
+     "icons": [{"src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png"}]}
+  ]
+}
